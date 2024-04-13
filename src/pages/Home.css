@@ -1,0 +1,21 @@
+.Home-data-div {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: start;
+}
+
+.Home-result-div {
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.Home-list-item {
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: solid 1px black;
+    width: 100%;
+    padding: 2px;
+}

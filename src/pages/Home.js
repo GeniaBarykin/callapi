@@ -1,12 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useState } from "react"
-
+import logo from '../logo.svg';
+import "./Home.css"
 
 export const Home = () => {
     const [link, setLink] = useState("https://catfact.ninja/fact");
    
-    const {data, isLoading, isError, error, refetch} = useQuery({
+    const {data, isFetching, isError, error, refetch} = useQuery({
         queryKey: ["getData"],
         queryFn: () => {
             return axios.get(link)
@@ -18,20 +19,20 @@ export const Home = () => {
         if (isError) return <div>
             {error.message}
         </div>
-        else if (isLoading){
-            return <h1>Is loading...</h1>
-        } else return <div>
+        else if (isFetching){
+            return <img src={logo} className="App-logo" alt="logo" />
+        } else return <div className="Home-data-div">
             {Object.keys(data).map((point, key) => {
-                return <li key={key}>{point} : {data[point]}</li>
+                return <li className="Home-list-item" key={key}>{point} : {data[point]}</li>
             })}
         </div>
     }
 
     return <div>
-        <h1>Homepage</h1>
+        <h3>Incert a link for the get request, for example:</h3>
         <input onChange={(e) => {setLink(e.target.value)}} 
         placeholder="https://catfact.ninja/fact"/>
         <button onClick={refetch}>Get data</button>
-        <h3>{showResult()}</h3>        
+        <div className="Home-result-div">{showResult()}  </div>     
     </div>
 }

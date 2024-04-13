@@ -1,0 +1,31 @@
+.Navbar-main-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: end;
+    height: 60px;
+    border: solid black 1px;
+  }
+
+.Navbar-link {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100%;  
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid black 1px;
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.Navbar-link:hover {
+    box-shadow: 5px 5px 5px black;
+    border-top: solid 2px black;
+}
+
+.Navbar-link:active {
+    box-shadow: 2px 2px 2px black;
+    border-top: solid 1px black;
+}
