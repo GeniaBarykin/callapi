@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Navbar } from './pages/Navbar';
+import { About } from './pages/About';
+import { Home } from './pages/Home';
 
 function App() {
+  const client= new QueryClient;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <QueryClientProvider client={client}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/about" element={<About/>}/>
+          <Route path="*" element={<Home/>}/>
+        </Routes>
+      </Router>
+     </QueryClientProvider>
     </div>
   );
 }
