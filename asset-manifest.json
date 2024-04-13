@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4138fed3.css",
-    "main.js": "/static/js/main.a68e286e.js",
-    "static/js/453.458439da.chunk.js": "/static/js/453.458439da.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.4138fed3.css.map": "/static/css/main.4138fed3.css.map",
-    "main.a68e286e.js.map": "/static/js/main.a68e286e.js.map",
-    "453.458439da.chunk.js.map": "/static/js/453.458439da.chunk.js.map"
+    "main.css": "/geniabarykin.github.io/callapi,/static/css/main.4138fed3.css",
+    "main.js": "/geniabarykin.github.io/callapi,/static/js/main.77579192.js",
+    "static/js/453.458439da.chunk.js": "/geniabarykin.github.io/callapi,/static/js/453.458439da.chunk.js",
+    "static/media/logo.svg": "/geniabarykin.github.io/callapi,/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/geniabarykin.github.io/callapi,/index.html",
+    "main.4138fed3.css.map": "/geniabarykin.github.io/callapi,/static/css/main.4138fed3.css.map",
+    "main.77579192.js.map": "/geniabarykin.github.io/callapi,/static/js/main.77579192.js.map",
+    "453.458439da.chunk.js.map": "/geniabarykin.github.io/callapi,/static/js/453.458439da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4138fed3.css",
-    "static/js/main.a68e286e.js"
+    "static/js/main.77579192.js"
   ]
 }
