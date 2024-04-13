@@ -6,7 +6,7 @@ import { About } from './pages/About';
 import { Home } from './pages/Home';
 
 function App() {
-  const client= new QueryClient;
+  const client= new QueryClient();
   return (
     <div className="App">
      <QueryClientProvider client={client}>
